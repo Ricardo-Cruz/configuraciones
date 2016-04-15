@@ -1,0 +1,504 @@
+##########################################
+#Explicación
+##########################################
+#Mod1:
+#Mod2: 
+#Mod2:
+#Mod2:
+#Mouse1:
+#Mouse1:
+#Mouse1:
+##########################################
+##########################################
+
+##########################################
+#Tareas
+##########################################
+Mod4 i Mod4 i 0 :Exec emacs ~/i/6/p1/p.tex
+Mod4 i Mod4 i 1 :Exec emacs ~/i/6/p2/p.tex
+Mod4 i Mod4 i 2 :Exec emacs ~/i/6/p3/p.tex
+Mod4 i Mod4 i 3 :Exec emacs ~/i/6/p4/p.tex
+Mod4 i Mod4 i 4 :Exec emacs ~/i/6/p5/p.tex
+Mod4 i Mod4 i 5 :Exec emacs ~/i/6/p6/p.tex
+Mod4 i Mod4 i 6 :Exec emacs ~/i/6/p7/p.tex
+Mod4 i Mod4 i 7 :Exec emacs ~/i/6/p8/p.tex
+Mod4 i Mod4 i 8 :Exec emacs ~/i/6/p9/p.tex
+Mod4 i Mod4 i 9 :Exec emacs ~/i/6/p10/p.tex
+Mod4 i Mod4 i f :Exec bluefish ~/1/README
+Mod4 i Mod4 i p :Exec emacs /var/www/html/index.html
+Mod4 i Mod4 i l :Exec xterm -bg "grey" ~/i/linux/
+Mod4 i Mod4 p c :Exec emacs ~/prob/calculo.tex
+Mod4 i Mod4 p v :Exec emacs ~/prob/variableCompleja.tex
+Mod4 i Mod4 p l :Exec emacs ~/prob/algebraLineal.tex
+Mod4 i Mod4 p r :Exec emacs ~/prob/relatividad.tex
+Mod4 i Mod4 p f :Exec emacs ~/prob/fisicaCuantica.tex
+Mod4 i Mod4 p m :Exec emacs ~/prob/mecanicaVectorial.tex
+Mod4 i Mod4 p a :Exec emacs ~/prob/algebraModerna.tex
+##########################################
+
+##########################################
+#Comodines
+##########################################
+#
+##########################################
+Mod4 50 :NextWorkspace
+Mod4 37 :PrevWorkspace
+##########################################
+
+##########################################
+#Sistema - systemD :(
+##########################################
+#
+##########################################
+Mod4 96 :Exec systemctl poweroff
+Mod4 95 :Exec systemctl reboot
+Mod4 76 :Exec systemctl hibernate
+Mod4 75 :Exec systemctl suspend
+##########################################
+
+##########################################
+#Teclas extras
+##########################################
+#
+##########################################
+152 :Restart
+123 :Exec amixer sset Master,0 5%+
+122 :Exec amixer sset Master,0 5%-
+121 :Exec amixer sset Master,0 toggle
+173 :ArrangeWindowsVertical
+171 :ArrangeWindowsHorizontal
+148 :Exec xcalc
+180 :Exec xfe /home/ricardo/i
+##########################################
+
+##########################################
+#Mouse
+##########################################
+#Window
+##########################################
+OnWindow Mod1 Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
+OnWindow Mod1 Mouse3 :MacroCmd {Raise} {Focus} {StartResizing NearestCorner}
+OnWindow Mod1 Mouse2 :StartTabbing
+#OnWindow Mod1 Mod4 Mouse1 :Lower
+##########################################
+
+##########################################
+##
+##########################################
+#Top app
+##########################################
+Mod4 10 :Exec emacs /home/ricardo/
+Mod4 11 :Exec gimp
+Mod4 12 :Exec inkscape
+Mod4 13 :Exec qtiplot
+Mod4 14 :If {Some Matches (xfe)} {NextWindow (xfe)} {Exec xfe}
+Mod4 15 :Exec java -jar /home/ricardo/ii/FT/opt/PreLauncher_ESP_4.0.jar
+Mod4 16 :Exec emacs /home/ricardo/
+Mod4 17 :Exec google-chrome-stable
+Mod4 18 :Exec iceweasel
+Mod4 19 :Exec xterm
+##########################################
+
+##########################################
+#a
+##########################################
+#
+##########################################
+Mod4 a :Exec fbrun
+##########################################
+
+##########################################
+#b
+##########################################
+#
+##########################################
+Mod4 b :Exec fbrun -bg black -fg white -sw
+##########################################
+
+##########################################
+#c
+##########################################
+#Close
+##########################################
+Mod4 c Mod4 c :Close
+Mod4 c 10 :Exec killall midori
+Mod4 c 11 :Exec killall gimp
+Mod4 c 12 :Exec killall inkscape
+Mod4 c 13 :Exec killall qtiplot
+Mod4 c 14 :Exec killall xfe
+Mod4 c 15 :Exec killall java
+Mod4 c 16 :Exec killall emacs
+Mod4 c 17 :Exec killall chrome
+Mod4 c 18 :Exec killall iceweasel
+Mod4 c 19 :Exec killall xterm
+Mod4 c c :Exec killall xcalc
+Mod4 c l :Exec killall libreoffice
+Mod4 c p :Exec killall pidgin
+Mod4 c v :Exec killall vlc
+Mod4 c f :Exec killall filezilla
+Mod4 c x :Exec killall xpdf
+Mod4 c Mod4 a :CloseAllWindows
+##########################################
+
+##########################################
+#d
+##########################################
+#Down volume
+##########################################
+Mod4 d :Exec amixer sset Master,0 5%-
+##########################################
+
+##########################################
+#e
+##########################################
+#Exec
+##########################################
+Mod4 e c :Exec xcalc
+Mod4 e s :Exec steam
+Mod4 e l :Exec libreoffice
+Mod4 e p :Exec pidgin
+Mod4 e v :Exec vlc
+Mod4 e r :Exec xterm su
+Mod4 e x :Exec xpdf
+Mod4 e f :Exec /home/ricardo/i/FT/opt/FileZilla3/bin/filezilla
+##########################################
+
+##########################################
+#f
+##########################################
+#fluxbox
+##########################################
+Mod4 f e :Exit
+Mod4 f r :Restart
+Mod4 f h :Exec fhelp
+##########################################
+
+##########################################
+#g
+##########################################
+#Go
+##########################################
+Mod4 g 1 :Workspace 1
+Mod4 g 2 :Workspace 2
+Mod4 g 3 :Workspace 3
+Mod4 g 4 :Workspace 4
+Mod4 g 5 :Workspace 5
+Mod4 g 6 :Workspace 6
+Mod4 g 7 :Workspace 7
+Mod4 g 8 :Workspace 8
+Mod4 g 9 :Workspace 9
+Mod4 g a :Workspace 10
+Mod4 g b :Workspace 11
+Mod4 g c :Workspace 12
+Mod4 g d :Workspace 13
+Mod4 g e :Workspace 14
+Mod4 g f :Workspace 15
+#Mod4 g Mod4 g a :Exec bash ~/alpha.sh .1 
+##########################################
+
+##########################################
+#h
+##########################################
+#
+##########################################
+##########################################
+
+##########################################
+#i
+##########################################
+#Configure
+##########################################
+Mod4 i b :Exec emacs ~/.bashrc
+Mod4 i f :Exec emacs ~/.fluxbox/keys
+Mod4 i e :Exec emacs ~/.emacs
+Mod4 i c :Exec xterm mutt
+Mod4 i l :Exec emacs ~/bib.bib
+Mod4 i p :Exec bash ~/imprimir.sh
+Mod4 i i :Exec bash libreoffice ~/plan.ods
+##########################################
+
+##########################################
+#j
+##########################################
+#Java
+##########################################
+Mod4 j h :exec steam steam://rungameid/221640s
+Mod4 j a :exec steam://rungameid/219890
+##########################################
+
+##########################################
+#k
+##########################################
+#
+##########################################
+
+##########################################
+
+##########################################
+#l
+##########################################
+#lead
+##########################################
+Mod4 l 1 :TakeToWorkspace 1
+Mod4 l 2 :TakeToWorkspace 2
+Mod4 l 3 :TakeToWorkspace 3
+Mod4 l 4 :TakeToWorkspace 4
+Mod4 l 5 :TakeToWorkspace 5
+Mod4 l 6 :TakeToWorkspace 6
+Mod4 l 7 :TakeToWorkspace 7
+Mod4 l 8 :TakeToWorkspace 8
+Mod4 l 9 :TakeToWorkspace 9
+Mod4 l a :TakeToWorkspace 10
+Mod4 l b :TakeToWorkspace 11
+Mod4 l c :TakeToWorkspace 13
+Mod4 l d :TakeToWorkspace 14
+Mod4 l e :TakeToWorkspace 15
+Mod4 l f :TakeToWorkspace 16
+Mod4 l p :TakeToPrevWorkspace
+Mod4 l n :TakeToNextWorkspace
+##########################################
+
+##########################################
+#m
+##########################################
+#
+##########################################
+Mod4 m p :Exec nyxmms2 play
+Mod4 m s :Exec nyxmms2 stop
+Mod4 m d :Exec nyxmms2 pause
+Mod4 m l :MoveTo 0 * Left
+Mod4 m r :MoveTo 0 * Right
+Mod4 m u :MoveTo * 0 Upper
+Mod4 m a :MoveTo * 0 Lower
+Mod4 m m :Exec amixer sset Master,0 toggle
+Mod4 79 :MoveTo 0 0 UpperLeft
+Mod4 80 :MoveTo 0 0 Upper
+Mod4 81 :MoveTo 0 0 UpperRight
+Mod4 83 :MoveTo 0 0 Left
+Mod4 84 :MoveTo 0 200 Upper
+Mod4 85 :MoveTo 0 0 Right
+Mod4 87 :MoveTo 0 0 LowerLeft
+Mod4 88 :MoveTo 0 0 Lower
+Mod4 89 :MoveTo 0 0 LowerRight
+Mod4 m Mod4 n :Exec nyxmms2 next
+Mod4 m Mod4 p :Exec nyxmms2 prev
+Mod4 m Mod4 m 116 :Exec bash /home/ricardo/down.sh 1
+##########################################
+
+##########################################
+#n
+##########################################
+#
+##########################################
+Mod4 n n :Exec bash ~/down.sh 0 
+Mod4 n 0 :Exec bash ~/down.sh 0 
+Mod4 n 1 :Exec bash ~/down.sh 1 
+Mod4 n 2 :Exec bash ~/down.sh 2 
+Mod4 n 3 :Exec bash ~/down.sh 3 
+Mod4 n 4 :Exec bash ~/down.sh 4 
+Mod4 n 5 :Exec bash ~/down.sh 5 
+Mod4 n 6 :Exec bash ~/down.sh 6 
+Mod4 n 7 :Exec bash ~/down.sh 7 
+Mod4 n 8 :Exec bash ~/down.sh 8 
+Mod4 n 9 :Exec bash ~/down.sh 9 
+Mod4 n a :Exec bash ~/down.sh 10 
+Mod4 n b :Exec bash ~/down.sh 11 
+Mod4 n c :Exec bash ~/down.sh 12 
+##########################################
+
+##########################################
+#o
+##########################################
+#
+##########################################
+Mod4 o a :Exec bash ~/alpha.sh .1 
+Mod4 o b :Exec bash ~/beta.sh .1 
+Mod4 o g :Exec bash ~/gamma.sh .1 
+Mod4 o w :Exec bash ~/ia.sh .1
+Mod4 o h :Exec bash ~/saluda.sh 1
+#Mod4 o :Exec bash ~/saluda.sh 
+#Mod4 o a:Exec bash ~/saluda.sh 
+# Mod4 o Mod4 18 v :MaximizeVertical
+# Mod4 o Mod4 18 m :MaximizeWindow
+# Mod4 o Mod4 18 l :MinimizeWindow
+# Mod4 o Mod4 18 s :Stick
+# Mod4 o Mod4 18 f :FullScreen
+# Mod4 o Mod4 18 d :SetLayer Dock
+# Mod4 o Mod4 18 n :SetLayer Normal
+# Mod4 o Mod4 18 b :SetLayer Bottom
+# Mod4 o Mod4 18 t :SetLayer Top
+# Mod4 o Mod4 18 a :SetLayer AboveDock
+# Mod4 o Mod4 18 Mod4 m :WindowMenu
+# Mod4 o Mod4 18 Mod4 a v :ArrangeWindowsVertical
+# Mod4 o Mod4 18 Mod4 a h :ArrangeWindowsHorizontal
+# Mod4 o Mod4 18 Ctrl a :AddWorkspace
+# Mod4 o Mod4 18 Ctrl r :RemoveLastWorkspace
+# Mod4 o Mod4 18 Mod4 w :Exec wicd-gtk
+##########################################
+
+##########################################
+#p
+##########################################
+#
+##########################################
+
+##########################################
+
+##########################################
+#q
+##########################################
+#
+##########################################
+Mod4 q :Exec killall bash
+##########################################
+
+##########################################
+#r
+##########################################
+#resize
+##########################################
+Mod4 r 1 :Resize 10
+Mod4 r 2 :Resize 20
+Mod4 r 3 :Resize 30
+Mod4 r 4 :Resize 40
+Mod4 r 5 :Resize 50
+Mod4 r 6 :Resize 60
+Mod4 r 7 :Resize 70
+Mod4 r 8 :Resize 80
+Mod4 r 9 :Resize 90
+Mod4 r Mod4 v 1 :ResizeVertical 10
+Mod4 r Mod4 v 2 :ResizeVertical 20
+Mod4 r Mod4 v 3 :ResizeVertical 30
+Mod4 r Mod4 v 4 :ResizeVertical 40
+Mod4 r Mod4 v 5 :ResizeVertical 50
+Mod4 r Mod4 v 6 :ResizeVertical 60
+Mod4 r Mod4 v 7 :ResizeVertical 70
+Mod4 r Mod4 v 8 :ResizeVertical 80
+Mod4 r Mod4 v 9 :ResizeVertical 90
+Mod4 r Mod4 h 1 :ResizeHorizontal 10
+Mod4 r Mod4 h 2 :ResizeHorizontal 20
+Mod4 r Mod4 h 3 :ResizeHorizontal 30
+Mod4 r Mod4 h 4 :ResizeHorizontal 40
+Mod4 r Mod4 h 5 :ResizeHorizontal 50
+Mod4 r Mod4 h 6 :ResizeHorizontal 60
+Mod4 r Mod4 h 7 :ResizeHorizontal 70
+Mod4 r Mod4 h 8 :ResizeHorizontal 80
+Mod4 r Mod4 h 9 :ResizeHorizontal 90
+##########################################
+
+##########################################
+#s
+##########################################
+#send
+##########################################
+Mod4 s 1 :SendToWorkspace 1
+Mod4 s 2 :SendToWorkspace 2
+Mod4 s 3 :SendToWorkspace 3
+Mod4 s 4 :SendToWorkspace 4
+Mod4 s 5 :SendToWorkspace 5
+Mod4 s 6 :SendToWorkspace 6
+Mod4 s 7 :SendToWorkspace 7
+Mod4 s 8 :SendToWorkspace 8
+Mod4 s 9 :SendToWorkspace 9
+Mod4 s a :SendToWorkspace 9
+Mod4 s b :SendToWorkspace 9
+Mod4 s c :SendToWorkspace 9
+Mod4 s d :SendToWorkspace 9
+Mod4 s e :SendToWorkspace 9
+Mod4 s f :SendToWorkspace 9
+Mod4 s p :SendToPrevWorkspace
+Mod4 s n :SendToNextWorkspace
+##########################################
+
+##########################################
+#t
+##########################################
+#tab
+##########################################
+Mod4 t 1 :Tab 1
+Mod4 t 2 :Tab 2
+Mod4 t 3 :Tab 3
+Mod4 t 4 :Tab 4
+Mod4 t 5 :Tab 5
+Mod4 t 6 :Tab 6
+Mod4 t 7 :Tab 7
+Mod4 t 8 :Tab 8
+Mod4 t 9 :Tab 9
+Mod4 t a :Tab 9
+Mod4 t b :Tab 9
+Mod4 t c :Tab 9
+Mod4 t d :Tab 9
+Mod4 t e :Tab 9
+Mod4 t f :Tab 9
+Mod4 t n :NextTab
+Mod4 t p :PrevTab
+##########################################
+
+##########################################
+#u
+##########################################
+#
+##########################################
+Mod4 u :Exec amixer sset Master,0 5%+
+##########################################
+
+##########################################
+#v
+##########################################
+#View
+##########################################
+Mod4 v 16 :If {Some Matches (emacs)} {NextWindow (emacs)} {Exec emacs}
+Mod4 v 19 :If {Some Matches (xterm)} {NextWindow (xterm)} {Exec xterm}
+Mod4 v x :If {Some Matches (xpdf)} {NextWindow (xpdf)} {}
+Mod4 v v :If {Some Matches (vlc)} {NextWindow (vlc)} {}
+Mod4 v s :If {Some Matches (synaptic)} {NextWindow (synaptic)} {}
+Mod4 v p :If {Some Matches (pidgin)} {NextWindow (pidgin)} {}
+##########################################
+
+##########################################
+#w
+##########################################
+#window
+##########################################
+Mod4 w h :MaximizeHorizontal
+Mod4 w v :MaximizeVertical
+Mod4 w m :MaximizeWindow
+Mod4 w l :MinimizeWindow
+Mod4 w s :Stick
+Mod4 w f :FullScreen
+Mod4 w d :SetLayer Dock
+Mod4 w n :SetLayer Normal
+Mod4 w b :SetLayer Bottom
+Mod4 w t :SetLayer Top
+Mod4 w a :SetLayer AboveDock
+Mod4 w Mod4 m :WindowMenu
+Mod4 w Mod4 a v :ArrangeWindowsVertical
+Mod4 w Mod4 a h :ArrangeWindowsHorizontal
+Mod4 w Ctrl a :AddWorkspace
+Mod4 w Ctrl r :RemoveLastWorkspace
+Mod4 w Mod4 w :Exec wicd-gtk
+##########################################
+
+##########################################
+#x
+##########################################
+#Move x
+##########################################
+Mod4 x :PrevWindow {groups} (workspace=[current])
+##########################################
+
+##########################################
+#y
+##########################################
+#
+##########################################
+#hola buenos dias
+##########################################
+
+##########################################
+#z
+##########################################
+#Move z
+##########################################
+Mod4 z :NextWindow {groups} (workspace=[current])
+##########################################

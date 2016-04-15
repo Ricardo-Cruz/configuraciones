@@ -1,0 +1,11 @@
+[app] (name=fbrun)
+  [Position]	(CENTER)	{0 0}
+  [Layer]	{2}
+[end]
+[app] (name=Navigator) (class=Iceweasel) (role=browser)
+[end]
+[app] (name=kile) (class=Kile) (role=MainWindow#1)
+[end]
+[app] (name=xterm) (class=XTerm)
+  [Dimensions]	{49% 67%}
+[end]
