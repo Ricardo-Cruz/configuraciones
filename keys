@@ -1,3 +1,45 @@
+! fluxbox-update_configs added '(workspace=[current])' to (Next|Prev)(Window|Group)
+! check lines marked by 'FBCV13' if they are correctly updated
+!mouse actions added by fluxbox-update_configs
+OnTitlebar Mouse1 :MacroCmd {Focus} {Raise} {ActivateTab}
+!mouse actions added by fluxbox-update_configs
+OnTitlebar Move1 :StartMoving
+OnLeftGrip Move1 :StartResizing bottomleft
+OnRightGrip Move1 :StartResizing bottomright
+OnWindowBorder Move1 :StartMoving
+
+!mouse actions added by fluxbox-update_configs
+OnTitlebar Mouse2 :StartTabbing
+
+!mouse actions added by fluxbox-update_configs
+OnTitlebar Double Mouse1 :Shade
+OnTitlebar Mouse3 :WindowMenu
+
+!mouse actions added by fluxbox-update_configs
+OnWindow Mod1 Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
+OnWindow Mod1 Mouse3 :MacroCmd {Raise} {Focus} {StartResizing BottomRight}
+
+! fluxbox-update_configs added '(workspace=[current])' to (Next|Prev)(Window|Group)
+! check lines marked by 'FBCV13' if they are correctly updated
+!mouse actions added by fluxbox-update_configs
+OnTitlebar Mouse1 :MacroCmd {Focus} {Raise} {ActivateTab}
+!mouse actions added by fluxbox-update_configs
+OnTitlebar Move1 :StartMoving
+OnLeftGrip Move1 :StartResizing bottomleft
+OnRightGrip Move1 :StartResizing bottomright
+OnWindowBorder Move1 :StartMoving
+
+!mouse actions added by fluxbox-update_configs
+OnTitlebar Mouse2 :StartTabbing
+
+!mouse actions added by fluxbox-update_configs
+OnTitlebar Double Mouse1 :Shade
+OnTitlebar Mouse3 :WindowMenu
+
+!mouse actions added by fluxbox-update_configs
+OnWindow Mod1 Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
+OnWindow Mod1 Mouse3 :MacroCmd {Raise} {Focus} {StartResizing BottomRight}
+
 ##########################################
 #Explicación
 ##########################################
@@ -85,13 +127,13 @@ OnWindow Mod1 Mouse2 :StartTabbing
 ##########################################
 ##
 ##########################################
-#Top app
+#aplicaciones
 ##########################################
-Mod4 10 :Exec emacs /home/ricardo/
+Mod4 10 :Exec mathematica
 Mod4 11 :Exec gimp
 Mod4 12 :Exec inkscape
 Mod4 13 :Exec qtiplot
-Mod4 14 :If {Some Matches (xfe)} {NextWindow (xfe)} {Exec xfe}
+Mod4 14 :If {Some Matches (xfe)} {NextWindow (workspace=[current]) (workspace=[current]) (xfe)} {Exec xfe} !! FBCV13 !! !! FBCV13 !!
 Mod4 15 :Exec java -jar /home/ricardo/ii/FT/opt/PreLauncher_ESP_4.0.jar
 Mod4 16 :Exec emacs /home/ricardo/
 Mod4 17 :Exec google-chrome-stable
@@ -447,12 +489,12 @@ Mod4 u :Exec amixer sset Master,0 5%+
 ##########################################
 #View
 ##########################################
-Mod4 v 16 :If {Some Matches (emacs)} {NextWindow (emacs)} {Exec emacs}
-Mod4 v 19 :If {Some Matches (xterm)} {NextWindow (xterm)} {Exec xterm}
-Mod4 v x :If {Some Matches (xpdf)} {NextWindow (xpdf)} {}
-Mod4 v v :If {Some Matches (vlc)} {NextWindow (vlc)} {}
-Mod4 v s :If {Some Matches (synaptic)} {NextWindow (synaptic)} {}
-Mod4 v p :If {Some Matches (pidgin)} {NextWindow (pidgin)} {}
+Mod4 v 16 :If {Some Matches (emacs)} {NextWindow (workspace=[current]) (workspace=[current]) (emacs)} {Exec emacs} !! FBCV13 !! !! FBCV13 !!
+Mod4 v 19 :If {Some Matches (xterm)} {NextWindow (workspace=[current]) (workspace=[current]) (xterm)} {Exec xterm} !! FBCV13 !! !! FBCV13 !!
+Mod4 v x :If {Some Matches (xpdf)} {NextWindow (workspace=[current]) (workspace=[current]) (xpdf)} { (workspace=[current]) (workspace=[current])} !! FBCV13 !! !! FBCV13 !!
+Mod4 v v :If {Some Matches (vlc)} {NextWindow (workspace=[current]) (workspace=[current]) (vlc)} { (workspace=[current]) (workspace=[current])} !! FBCV13 !! !! FBCV13 !!
+Mod4 v s :If {Some Matches (synaptic)} {NextWindow (workspace=[current]) (workspace=[current]) (synaptic)} { (workspace=[current]) (workspace=[current])} !! FBCV13 !! !! FBCV13 !!
+Mod4 v p :If {Some Matches (pidgin)} {NextWindow (workspace=[current]) (workspace=[current]) (pidgin)} { (workspace=[current]) (workspace=[current])} !! FBCV13 !! !! FBCV13 !!
 ##########################################
 
 ##########################################
@@ -484,7 +526,7 @@ Mod4 w Mod4 w :Exec wicd-gtk
 ##########################################
 #Move x
 ##########################################
-Mod4 x :PrevWindow {groups} (workspace=[current])
+Mod4 x :PrevWindow {groups} (workspace=[current])  (workspace=[current])  (workspace=[current]) !! FBCV13 !! !! FBCV13 !!
 ##########################################
 
 ##########################################
@@ -500,5 +542,5 @@ Mod4 x :PrevWindow {groups} (workspace=[current])
 ##########################################
 #Move z
 ##########################################
-Mod4 z :NextWindow {groups} (workspace=[current])
+Mod4 z :NextWindow {groups} (workspace=[current])  (workspace=[current])  (workspace=[current]) !! FBCV13 !! !! FBCV13 !!
 ##########################################
